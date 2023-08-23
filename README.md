@@ -15,7 +15,7 @@ A random database topic will be assigned by the instructor to all the students. 
 
 | Topic Description | Date Assigned                   |
 | ----------------- | ------------------------------- |
-| your topic        | the date the topic was assigned |
+| Fitness technology industry        | 8/23/2023 |
 
 All the work in this course is divided into two milestones, each of them has several checkpoints. Checkpoints are cumulative work. That's it, all checkpoints
 (but checkpoint #1) are based on the work done in previous ones. **_Note that late work won't get credit. No exceptions_**
