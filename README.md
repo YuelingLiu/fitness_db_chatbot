@@ -25,7 +25,7 @@ All the work in this course is divided into two milestones, each of them has sev
 | 1           | M1: Product Summary and Database Requirements DONE     |
 | 2           | M1: Database Conceptual Design                DONE                |
 | 3           | M1: Database Architecture              DONE            |
-| 4           | M2: Remote Database and User Interface (Bot) Setup |
+| 4           | M2: Remote Database and User Interface (Bot) Setup  DONE |
 | 5           | M2: Implementation & Testing                       |
 
 **_IMPORTANT: work committed to repositories such as personal repositories won't be considered for grading. All the work done in this course must be committed to the remote repository created in class, using the link provided by the instructor. No exceptions!_**
