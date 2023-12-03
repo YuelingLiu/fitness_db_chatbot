@@ -27,9 +27,13 @@ VALUES
 INSERT INTO schedule
     (schedule_id, duration, start_time, end_time)
 VALUES 
-    (1550,  60, '2023-11-05 08:00:00', '2023-11-05 09:00:00'),   
+    (1550,   60, '2023-11-05 08:00:00', '2023-11-05 09:00:00'),   
     (1551,   30, '2023-11-06 10:00:00', '2023-11-06 10:30:00'),   
-    (1552,   45, '2023-11-07 14:15:00', '2023-11-07 15:00:00');    
+    (1552,   45, '2023-12-11 13:00:00', '2023-12-11 13:45:00'),
+	(1553,   45, '2023-12-18 14:15:00', '2023-12-18 15:00:00'),
+	(1554,   45, '2023-12-22 15:15:00', '2023-12-22 16:00:00'),
+    (1555,   30, '2023-12-27 15:15:00', '2023-12-27 15:45:00');
+      
 
 
  -- 4. account  table inserts
@@ -60,7 +64,7 @@ VALUES
 INSERT INTO instructor
     (instructor_id, name, email, phone, account_id, dob, ssn)
 VALUES 
-    (5100, 'Tommy T', 'TommyTe@example.com', '234-567-8901',12345,'1988-02-12', '777-77-7777'),
+    (5100, 'Tommy T', 'TommyT@example.com', '234-567-8901',12345,'1988-02-12', '777-77-7777'),
     (5101, 'Bob B', 'BobBrown@example.com', '345-678-9012',12347,'1980-06-25', '888-88-8888'),
     (5102, 'Zach L', 'ZachL@example.com', '345-678-9012',12348,'1980-06-25', '888-88-8888');
 
@@ -71,9 +75,14 @@ VALUES
 INSERT INTO workout_class
     (class_id, level, class_title, location, type, instructor_id, schedule_id)
 VALUES 
-    (9900, 1, 'Cardio Blast', 'Room A',  110, 5100, 1551),
-    (9901, 1, 'Strength Training', 'Room B', 111, 5101, 1552),
-    (9902, 1, 'Yoga Flex', 'Room C', 112, 5100, 1550);
+    (9900, 1, 'Cardio Blast', 'Room A',  110, 5100, 1550),
+    (9901, 1, 'Strength Training', 'Room B', 111, 5101, 1551),
+    (9902, 1, 'Yoga Flex', 'Room C', 112, 5100, 1552),
+	(9903, 2, 'Yoga Pulse', 'Room C', 112, 5102, 1553),
+    (9904, 2, 'Pilates Powerhouse', 'Room C', 112, 5102, 1552),
+	(9905, 1, 'Circuit Cyclone ', '2Room C', 112, 5100, 1554);
+      
+    
 
 -- 7. general member table inserts
 INSERT INTO member
@@ -99,8 +108,12 @@ INSERT INTO booking_history
     (booking_id, member_id, class_id, booking_date, cancellation_date, status)
 VALUES 
     (2001, 888801, 9900, '2023-01-05 09:30:00', NULL, 'Booked'),
-    (2002, 888802, 9900, '2023-01-10 11:00:00', '2023-01-12 12:30:00', 'Cancelled'),
-    (2003, 888803, 9901, '2023-01-15 16:45:00', NULL, 'Booked');
+    (2002, 888802, 9900, '2023-01-10 11:00:00', NULL, 'Booked'),
+    (2003, 888803, 9901, '2023-01-15 16:45:00', NULL, 'Booked'),
+	(2004, 888803, 9900, '2023-10-15 16:45:00', NULL, 'Booked'),
+	(2005, 888803, 9904, '2023-10-27 16:45:00', NULL, 'Booked'),
+	(2006, 888803, 9904, '2023-11-01 16:45:00', NULL, 'Booked');
+    
 
 
 -- 10. instructor certification table inserts 
